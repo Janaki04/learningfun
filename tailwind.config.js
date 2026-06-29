@@ -1,15 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+/** @type {import('tailwindcss').Config} /**/
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-   theme: {
+  theme: {
     extend: {
-        fontFamily: {
-        sans: ['"Nunito Sans"', 'sans-serif'],
+      fontFamily: {
+        // This overrides Tailwind's default 'sans' font stack globally
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },
   plugins: [],
-};
+}
